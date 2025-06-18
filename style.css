@@ -12,6 +12,11 @@ main{
     margin: 0 auto;
 }
 
+p{
+    margin: 0 !important;
+
+}
+
 .card-img-top{
     height: 200px;
     border-radius: 4px;
