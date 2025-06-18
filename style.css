@@ -7,9 +7,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.card-img-top{
+    height: 200px;
+    border-radius: 4px;
 }
 
 .container-fluid{
@@ -25,6 +30,26 @@ main{
     
 }
 
+.card.quizcard{
+    width: 25rem !important;
+}
+
+.card-body{
+    padding: 8px !important;
+}
+
 .question-footer{
     display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    border-top: 1px solid rgba(133, 133, 133, 0.4);
+    padding-top: 8px;
+}
+
+button{
+    border-radius: 4px !important;
+    background-color: #6ab0fa;
+    border: none;
+    color: white;
 }
