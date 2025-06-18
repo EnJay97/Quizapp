@@ -56,7 +56,17 @@ let questions = [
         "answer_2": "Genf",
         "answer_3": "Es gibt keine offizielle Hauptstadt",
         "answer_4": "Bern",
-        "right_answer": 1,
+        "right_answer": 3,
+        "explanation": "Die Schweiz hat keine Hauptstadt, weil ihre Verfassung keine vorsieht. Bern ist Regierungssitz festgelegt."
+    }
+
+    {
+        "question": "Wie heißt der Berg auf dem Bild?",
+        "answer_1": "Monte San Salvatore",
+        "answer_2": "Mont Blanc",
+        "answer_3": "Lepontinische Alpen",
+        "answer_4": "Matterhorn",
+        "right_answer": 4,
         "explanation": "Die Schweiz hat keine Hauptstadt, weil ihre Verfassung keine vorsieht. Bern ist Regierungssitz festgelegt."
     }
 
