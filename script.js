@@ -8,34 +8,36 @@ init();
 
 // Karten rendern
 
+let currentQuestion = 0;
+
 function renderCards(){
     let contentRef = document.getElementById("content");
     contentRef.innerHTML = "";
 
     for (let i = 0; i < questions.length; i++) {
-        contentRef.innerHTML += `<img src="./img/matterhorn.jpg" class="card-img-top">
+        contentRef.innerHTML += `<img src="${images[i].src}" class="card-img-top">
                                     <div class="card-body">
                                     <h5 class="card-title">${questions[i].question}</h5>
 
-                                    <div class="card mb-2">
+                                    <div class="card style_answer_card mb-2">
                                         <div class="card-body">
                                             <p>${questions[i].answer_1}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card mb-2">
+                                    <div class="card style_answer_card mb-2">
                                         <div class="card-body">
                                             <p>${questions[i].answer_2}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card mb-2">
+                                    <div class="card style_answer_card mb-2">
                                         <div class="card-body">
                                             <p>${questions[i].answer_3}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card mb-2">
+                                    <div class="card style_answer_card mb-2">
                                         <div class="card-body">
                                             <p>${questions[i].answer_4}</p>
                                         </div>

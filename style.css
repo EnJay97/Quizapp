@@ -43,6 +43,11 @@ p{
     padding: 8px !important;
 }
 
+.style_answer_card:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 .question-footer{
     display: flex;
     justify-content: space-between;
@@ -57,4 +62,9 @@ button{
     background-color: #6ab0fa;
     border: none;
     color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #548bc5;
 }
