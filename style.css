@@ -1,3 +1,31 @@
 body{
-    background-color: #007AFF;
+    background-color: #6ab0fa !important;
+    min-height: 100vh;
+    
+}
+
+header{
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    justify-content: center !important;
+}
+
+.navbar.bg-body-tertiary{
+    background-color: #5493d6 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    
 }
