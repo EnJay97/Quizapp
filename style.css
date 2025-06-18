@@ -1,11 +1,6 @@
 body{
     background-color: #6ab0fa !important;
     min-height: 100vh;
-    
-}
-
-header{
-    
 }
 
 main{
@@ -28,4 +23,8 @@ main{
 .navbar-brand{
     color: white !important;
     
+}
+
+.question-footer{
+    display: flex;
 }
