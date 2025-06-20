@@ -1,6 +1,6 @@
 let images = [
     {
-        "src": "./img/schweiz_umriss.jpg"
+        "src": "./img/schweiz_umriss.png"
     },
 
     {

@@ -19,25 +19,25 @@ function renderCards(){
                                     <div class="card-body">
                                     <h5 class="card-title">${questions[i].question}</h5>
 
-                                    <div class="card style_answer_card mb-2">
+                                    <div class="card style_answer_card mb-2 onclick="answer('answer_1')"">
                                         <div class="card-body">
                                             <p>${questions[i].answer_1}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card style_answer_card mb-2">
+                                    <div class="card style_answer_card mb-2 onclick=answer"('answer_2')"">
                                         <div class="card-body">
                                             <p>${questions[i].answer_2}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card style_answer_card mb-2">
+                                    <div class="card style_answer_card mb-2 onclick=answer"('answer_3')"">
                                         <div class="card-body">
                                             <p>${questions[i].answer_3}</p>
                                         </div>
                                     </div>
 
-                                    <div class="card style_answer_card mb-2">
+                                    <div class="card style_answer_card mb-2 onclick=answer"('answer_4')"">
                                         <div class="card-body">
                                             <p>${questions[i].answer_4}</p>
                                         </div>
@@ -52,4 +52,9 @@ function renderCards(){
                                         </div>
                                     </div>`
 }
+};
+
+function answer(selection){
+    console.log(selection);
+    
 };
