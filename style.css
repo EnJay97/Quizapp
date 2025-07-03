@@ -73,9 +73,11 @@ button:hover{
 .right_answer{
     background-color: rgb(150, 186, 150);
     border-radius: 4px;
+    color: white !important;
 }
 
 .wrong_answer{
     background-color: rgb(219, 126, 126);
     border-radius: 4px;
+    color: white !important;
 }

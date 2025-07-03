@@ -52,12 +52,12 @@ function renderCards(){
 };
 
 function answer(selection){
-    let question = questions[currentQuestion];                  
-    let selectedQuestionNumber = selection.slice(-1);           
+    let question = questions[currentQuestion];
+    let selectedQuestionNumber = selection.slice(-1);
     
-    if (selectedQuestionNumber == question['right_answer']) {   
-        document.getElementById(selection).classList.add('right_answer');         
-    } else{                                                     
-        document.getElementById(selection).classList.add('wrong_answer');                      
+    if (selectedQuestionNumber == question['right_answer']) {
+        document.getElementById(selection).classList.add('right_answer');
+    } else{
+        document.getElementById(selection).classList.add('wrong_answer');
     }
 };
