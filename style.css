@@ -70,6 +70,11 @@ button:hover{
     background-color: #548bc5;
 }
 
+button.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .right_answer{
     background-color: rgb(150, 186, 150);
     border-radius: 4px;
@@ -80,4 +85,8 @@ button:hover{
     background-color: rgb(219, 126, 126);
     border-radius: 4px;
     color: white !important;
+}
+
+.d_none{
+    display: none;
 }

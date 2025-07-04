@@ -1,7 +1,7 @@
 
 function init() {
     renderCards();
-};
+}
 
 // Karten rendern
 
@@ -12,7 +12,7 @@ function renderCards(){
     contentRef.innerHTML = "";
 
     for (let i = 0; i < questions.length; i++) {
-        contentRef.innerHTML += `<img src="${images[i].src}" class="card-img-top">
+        contentRef.innerHTML = `<img src="${images[i].src}" class="card-img-top">
                                     <div class="card-body">
                                     <h5 class="card-title">${questions[i].question}</h5>
 
@@ -45,19 +45,29 @@ function renderCards(){
                                             <b>${i+1}</b> von <b>${questions.length}</b> Fragen
                                         </div>
                                         <div>
-                                            <button>nächste Frage</button>
+                                            <button class="disabled">nächste Frage</button>
                                         </div>
                                     </div>`
 }
-};
+}
 
 function answer(selection){
     let question = questions[currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
+    let idOfRightAnswer = `answer_${question['right_answer']}`;
     
     if (selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).classList.add('right_answer');
     } else{
         document.getElementById(selection).classList.add('wrong_answer');
-    }
-};
+        document.getElementById(idOfRightAnswer).classList.add('right_answer');
+    }   
+    
+    //openExplaination();
+}
+
+/*function openExplaination(){
+    // bei click auf Antwort, Overlay öffnen
+    document.getElementById('overlay').classList.remove('d_none')
+    // h3 richtige Antwort, p kurze Erklärung einblenden
+}*/
