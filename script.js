@@ -1,54 +1,59 @@
 
 function init() {
-    renderCards();
+    renderCard();
 }
 
-// Karten rendern
+// aktuelle Karte rendern
 
 let currentQuestion = 0;
 
-function renderCards(){
+function renderCard(){
     let contentRef = document.getElementById("content");
     contentRef.innerHTML = "";
 
-    for (let i = 0; i < questions.length; i++) {
-        contentRef.innerHTML = `<img src="${images[i].src}" class="card-img-top">
+    if (currentQuestion >= questions.length) {
+        contentRef.innerHTML = "<h2>Quiz beendet</h2>";
+        return; // bricht die Funktion am Ende des Spiels ab
+    }
+
+    let q = questions[currentQuestion];
+
+    contentRef.innerHTML = `<img src="${images[currentQuestion].src}" class="card-img-top">
                                     <div class="card-body">
-                                    <h5 class="card-title">${questions[i].question}</h5>
+                                    <h5 class="card-title">${q.question}</h5>
 
                                     <div class="card style_answer_card mb-2" onclick="answer('answer_1')">
                                         <div class="card-body" id="answer_1">
-                                            <p>${questions[i].answer_1}</p>
+                                            <p>${q.answer_1}</p>
                                         </div>
                                     </div>
 
                                     <div class="card style_answer_card mb-2" onclick="answer('answer_2')">
                                         <div class="card-body" id="answer_2">
-                                            <p>${questions[i].answer_2}</p>
+                                            <p>${q.answer_2}</p>
                                         </div>
                                     </div>
 
                                     <div class="card style_answer_card mb-2" onclick="answer('answer_3')">
                                         <div class="card-body" id="answer_3">
-                                            <p>${questions[i].answer_3}</p>
+                                            <p>${q.answer_3}</p>
                                         </div>
                                     </div>
 
                                     <div class="card style_answer_card mb-2" onclick="answer('answer_4')">
                                         <div class="card-body" id="answer_4">
-                                            <p>${questions[i].answer_4}</p>
+                                            <p>${q.answer_4}</p>
                                         </div>
                                     </div>
 
                                     <div class="question-footer">
                                         <div>
-                                            <b>${i+1}</b> von <b>${questions.length}</b> Fragen
+                                            <b>${currentQuestion+1}</b> von <b>${questions.length}</b> Fragen
                                         </div>
                                         <div>
-                                            <button class="disabled">nächste Frage</button>
+                                            <button id="next-button" class="disabled" onclick ="nextQuestion()">nächste Frage</button>
                                         </div>
                                     </div>`
-}
 }
 
 function answer(selection){
@@ -61,7 +66,9 @@ function answer(selection){
     } else{
         document.getElementById(selection).classList.add('wrong_answer');
         document.getElementById(idOfRightAnswer).classList.add('right_answer');
-    }   
+    }  
+    
+    document.getElementById('next-button').classList.remove('disabled');
     
     //openExplaination();
 }
@@ -71,3 +78,8 @@ function answer(selection){
     document.getElementById('overlay').classList.remove('d_none')
     // h3 richtige Antwort, p kurze Erklärung einblenden
 }*/
+
+function nextQuestion(){
+    currentQuestion++;
+    renderCard();
+}

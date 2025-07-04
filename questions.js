@@ -10,7 +10,7 @@ let questions = [
         "explanation": "Es gibt 20 sogenannte Vollkantone und 6 Halbkantone. Trotzdem zählt jeder als eigener Kanton."
     },
 
-/*    {
+    {
         "question": "Woher stammt das Kürzel 'CH' für die Schweiz?",
         "answer_1": "Lateinisch - Confoederatio Helvetica",
         "answer_2": "Französich - Confédération Helvétique",
@@ -68,6 +68,6 @@ let questions = [
         "answer_4": "Matterhorn",
         "right_answer": 4,
         "explanation": "Das Matterhorn ist 4.478 Meter hoch und gilt durch seine einzigartige Form als Wahrzeichen der Alpen."
-    }*/
+    }
 
 ];

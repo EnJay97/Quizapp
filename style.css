@@ -17,10 +17,11 @@ p{
 }
 
 .card-img-top{
-    height: 240px;
-    width: 20rem !important;
+    height: 200px;
+    width: 290px !important;
     border-radius: 4px;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 .container-fluid{
@@ -73,6 +74,7 @@ button:hover{
 button.disabled{
     pointer-events: none;
     cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .right_answer{
