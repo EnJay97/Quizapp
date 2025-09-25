@@ -38,6 +38,11 @@ body{
     color: white !important;
 }
 
+.trophy{
+    width: 100% !important;
+    height: 40vh !important;
+}
+
 .question-footer{
     border-top: 1px solid rgba(0,0,0,0.4);
     display: flex;
