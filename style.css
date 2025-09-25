@@ -13,6 +13,29 @@ body{
 
 .quiz-card{
     width: 30rem;
+    height: 94vh !important;
+    margin-top: 8px;
+}
+
+.quiz-card img{
+    height: 240px;
+    width: 300px;
+    align-self: center;
+}
+
+.card-body .card{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-answer-card:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+}
+
+.bg-success, .bg-danger{
+    color: white !important;
 }
 
 .question-footer{
