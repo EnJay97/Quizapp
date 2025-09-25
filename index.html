@@ -24,7 +24,12 @@
     <div class="container">
         <div class="card quiz-card">
             <img src="./img/schweiz_umriss.png" class="card-img-top">
-            <div class="card-body">
+
+            <div class="card-body" id="endscreen" style="display: none;">
+              Quiz beendet
+            </div>
+
+            <div class="card-body" id="question-body">
                 <h5 id="questionText" class="card-title">Frage</h5>
 
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
@@ -54,7 +59,7 @@
                 <span>
                     <b id="currentQuestion"></b>von<b id="allQuestions"></b>Fragen
                 </span>
-                <button id="button" class="btn btn-primary">Nächste Frage</button>
+                <button id="button" class="btn btn-primary" disabled onclick="nextQuestion()">Nächste Frage</button>
             </div>
         </div>
     </div>
