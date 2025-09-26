@@ -1,5 +1,6 @@
 
 let currentQuestion = 0;
+let correctAnswers = 0;
 
 function init() {
     document.getElementById("allQuestions").innerHTML = questions.length;
@@ -11,9 +12,18 @@ function showCurrentQuestion() {
     if(currentQuestion >= questions.length) {
         //show Endscreen
         document.getElementById("endscreen").style = '';
-        document.getElementById("question-body").style = 'display: none'
-    } else
+        document.getElementById("question-body").style = 'display: none';
+
+        document.getElementById("correctAnswers").innerHTML = correctAnswers;
+        document.getElementById("amountOfQuestions").innerHTML = questions.length;
+        document.getElementById("header-img").src = './img/trophy.jpg'
+    } else //show current Question
         {
+        let percent = (currentQuestion + 1) / questions.length;
+        percent = Math.round(percent * 100);
+        //document.getElementById("progressBar").innerHTML = `${percent} %` nur für Prozentanzeige
+        document.getElementById("progressBar").style = `width: ${percent}%;`;
+        
         let question = questions[currentQuestion];
         document.getElementById("currentQuestion").innerHTML = currentQuestion+1;
         document.getElementById("questionText").innerHTML = question["question"];
@@ -31,6 +41,7 @@ function answer(selection) {
  
     if (selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success');
+        correctAnswers++;
     }
     else{
         document.getElementById(selection).parentNode.classList.add('bg-danger');

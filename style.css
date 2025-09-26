@@ -38,9 +38,30 @@ body{
     color: white !important;
 }
 
+.progress{
+    border-radius: 0 !important;
+}
+
 .trophy{
-    width: 100% !important;
+    width: 80% !important;
     height: 40vh !important;
+    display: flex;
+    justify-self: center;
+}
+
+.card-body#endscreen{
+    padding: 8px;
+}
+
+.card-body div p{
+    margin: 0;
+    justify-self: center;
+}
+
+#endscreen h2{
+    margin: 0;
+    display: flex;
+    justify-self: center;
 }
 
 .question-footer{

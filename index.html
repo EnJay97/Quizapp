@@ -22,18 +22,20 @@
     </nav>
 
     <div class="container">
+
         <div class="card quiz-card">
-            <img src="./img/schweiz_umriss.png" class="card-img-top">
+            <img src="./img/schweiz_umriss.png" id="header-img" class="card-img-top">
+
+            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressBar" style="width: 0%"></div>
+            </div>
 
             <div class="card-body" id="endscreen" style="display: none;">
               <div>
-                Quiz beendet!
+                <h2>Quiz beendet!</h2>
               </div>
               <div>
-                <img class="trophy" src="./img/trophy.jpg">
-              </div>
-              <div>
-                Du hast XXX von XXX Fragen richtig beantwortet.
+                <p>Du hast <b id="correctAnswers">XXX</b> von <b id="amountOfQuestions">XXX</b> Fragen richtig beantwortet.</p>
               </div>
             </div>
 
