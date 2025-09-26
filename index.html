@@ -37,6 +37,9 @@
               <div>
                 <p>Du hast <b id="correctAnswers">XXX</b> von <b id="amountOfQuestions">XXX</b> Fragen richtig beantwortet.</p>
               </div>
+              <div class="button-row">
+                <button id="restartButton" class="btn btn-primary" onclick="restartGame()">Neustart</button>
+              </div>
             </div>
 
             <div class="card-body" id="question-body">
@@ -67,7 +70,7 @@
             </div>
             <div class="question-footer">
                 <span>
-                    <b id="currentQuestion"></b>von<b id="allQuestions"></b>Fragen
+                    <b id="currentQuestion"></b> von <b id="allQuestions"></b> Fragen
                 </span>
                 <button id="button" class="btn btn-primary" disabled onclick="nextQuestion()">Nächste Frage</button>
             </div>

@@ -53,6 +53,12 @@ body{
     padding: 8px;
 }
 
+.button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
 .card-body div p{
     margin: 0;
     justify-self: center;
