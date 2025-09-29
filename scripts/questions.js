@@ -7,6 +7,7 @@ let questions = [
         "answer_3": "26",
         "answer_4": "30",
         "right_answer": 3,
+        "img": "img/schweiz_umriss.png",
         "explanation": "Es gibt 20 sogenannte Vollkantone und 6 Halbkantone. Trotzdem zählt jeder als eigener Kanton."
     },
 
@@ -17,6 +18,7 @@ let questions = [
         "answer_3": "Deutsch - Schweizerische Eidgenossenschaft",
         "answer_4": "Italienisch - Confederazione Elvetica",
         "right_answer": 1,
+        "img": "img/latein.jpg",
         "explanation": "Latein wurde gewählt, weil es neutral ist und keine der Landessprachen bevorzugt."
     },
 
@@ -27,6 +29,7 @@ let questions = [
         "answer_3": "3",
         "answer_4": "4",
         "right_answer": 4,
+        "img": "img/sprachen.jpg",
         "explanation": "In verschiedenen Teilen der Schweiz gibt es verschiedene Amtssprachen: Deutsch, Französisch, Italienisch, Rätoromanisch."
     },
 
@@ -37,6 +40,7 @@ let questions = [
         "answer_3": "Die Grenze zwischen Stadt und Land",
         "answer_4": "Ein historischer Festungsgraben",
         "right_answer": 2,
+        "img": "img/roeschtigraben.jpg",
         "explanation": "Röschtigraben bezeichnet die kulturelle und sprachliche Grenze zwischen der deutschsprachigen und der französichsprachigen Schweiz. Es ist aber eher mit einem Augenzwinkern zu betrachten."
     },
 
@@ -47,6 +51,7 @@ let questions = [
         "answer_3": "Italien",
         "answer_4": "Deutschland",
         "right_answer": 1,
+        "img": "img/flaggen.jpg",
         "explanation": "Die Schweiz hat 5 Nachbarländer. Deutschland, Frankreich, Italien, Liechtenstein und Österreich."
     },
 
@@ -57,6 +62,7 @@ let questions = [
         "answer_3": "Es gibt keine offizielle Hauptstadt",
         "answer_4": "Bern",
         "right_answer": 3,
+        "img": "img/bern.jpg",
         "explanation": "Die Schweiz hat keine Hauptstadt, weil ihre Verfassung keine vorsieht. Bern ist Regierungssitz festgelegt."
     },
 
@@ -67,6 +73,7 @@ let questions = [
         "answer_3": "Lepontinische Alpen",
         "answer_4": "Matterhorn",
         "right_answer": 4,
+        "img": "img/matterhorn.jpg",
         "explanation": "Das Matterhorn ist 4.478 Meter hoch und gilt durch seine einzigartige Form als Wahrzeichen der Alpen."
     }
 

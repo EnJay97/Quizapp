@@ -10,6 +10,10 @@ function init() {
     showCurrentQuestion();
 }
 
+function renderImg(currentQuestion){
+    document.getElementById("header-img").src = questions[currentQuestion].img;
+}
+
 function showCurrentQuestion() {
 
     if(gameIsOver()) {
@@ -18,6 +22,7 @@ function showCurrentQuestion() {
         {
         updateProgressBar();
         updateToNextQuestion();
+        renderImg(currentQuestion);
     }
 }
 
@@ -56,7 +61,7 @@ function answer(selection) {
     let selectedQuestionNumber = selection.slice(-1);
     let idOfRightAnswer = `answer_${question['right_answer']}`
  
-    if (rightAnswerSelected(selectedQuestionNumber)) {
+    if (rightAnswerSelected(question, selectedQuestionNumber)) {
         document.getElementById(selection).parentNode.classList.add('bg-success');
         AUDIO_SUCCESS.play();
         correctAnswers++;
@@ -69,7 +74,7 @@ function answer(selection) {
     document.getElementById("button").disabled = false;
 }
 
-function rightAnswerSelected(selectedQuestionNumber){
+function rightAnswerSelected(question, selectedQuestionNumber){
     return selectedQuestionNumber == question['right_answer'];
 }
 
