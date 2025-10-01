@@ -77,3 +77,55 @@ body{
     align-items: center;
     padding-top: 12px;
 }
+
+.d_none{
+    display: none !important;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 300px;
+    height: 400px;
+    align-self: anchor-center;
+    justify-self: anchor-center;
+    border-radius: 8px;
+}
+
+.inner_overlay{
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.inner_overlay h4{
+    text-align: center;
+}
+
+#close button{
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(13,110,253);
+}
+
+#close button p{
+    margin: 4px;
+    padding: 0;
+    color: white;
+}
+
+@media (max-width: 450px) {
+.card-body {
+    padding: 8px !important;
+}
+}

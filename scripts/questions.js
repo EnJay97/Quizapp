@@ -63,7 +63,7 @@ let questions = [
         "answer_4": "Bern",
         "right_answer": 3,
         "img": "img/bern.jpg",
-        "explanation": "Die Schweiz hat keine Hauptstadt, weil ihre Verfassung keine vorsieht. Bern ist Regierungssitz festgelegt."
+        "explanation": "Die Schweiz hat keine Hauptstadt, weil ihre Verfassung keine vorsieht. Bern ist als Regierungssitz festgelegt."
     },
 
     {

@@ -72,10 +72,21 @@ function answer(selection) {
         AUDIO_FAIL.play();
     }
     document.getElementById("button").disabled = false;
+    explanation();
 }
 
 function rightAnswerSelected(question, selectedQuestionNumber){
     return selectedQuestionNumber == question['right_answer'];
+}
+
+function explanation() {
+    let question = questions[currentQuestion];
+    document.getElementById("overlayExplaination").classList.remove("d_none")
+    document.getElementById("explanation").innerHTML = question["explanation"];
+}
+
+function closeOverlay() {
+    document.getElementById("overlayExplaination").classList.add("d_none")
 }
 
 function nextQuestion() {
